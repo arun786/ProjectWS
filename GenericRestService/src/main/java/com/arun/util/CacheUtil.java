@@ -19,6 +19,7 @@ public class CacheUtil {
 
 	@Scheduled(cron = "*/10 * * * * *")
 	public void cache() {
+		
 		List<ConfigurationBean> lstConfig = configurationDetails.fetchConfigurationDetails();
 
 		for (ConfigurationBean beans : lstConfig) {
@@ -29,5 +30,10 @@ public class CacheUtil {
 
 			consumerDetails.put(beans.getConsumerId(), consumer);
 		}
+
+	}
+
+	public static Map<String, Consumer> getConsumerDetailsBean() {
+		return consumerDetails;
 	}
 }
