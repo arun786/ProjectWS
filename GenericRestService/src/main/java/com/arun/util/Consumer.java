@@ -3,7 +3,7 @@ package com.arun.util;
 public class Consumer {
 
 	private String consumerId;
-	private String consumerName;
+	private String country;
 	private String attributes;
 
 	public String getConsumerId() {
@@ -14,12 +14,12 @@ public class Consumer {
 		this.consumerId = consumerId;
 	}
 
-	public String getConsumerName() {
-		return consumerName;
+	public String getCountry() {
+		return country;
 	}
 
-	public void setConsumerName(String consumerName) {
-		this.consumerName = consumerName;
+	public void setCountry(String country) {
+		this.country = country;
 	}
 
 	public String getAttributes() {

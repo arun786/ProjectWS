@@ -14,7 +14,7 @@ public class ConfigMapper implements RowMapper<ConfigurationBean> {
 
 		ConfigurationBean cb = new ConfigurationBean();
 		cb.setConsumerId(rs.getString(1));
-		cb.setName(rs.getString(2));
+		cb.setCountry(rs.getString(2));
 		cb.setAttributes(rs.getString(3));
 		return cb;
 	}

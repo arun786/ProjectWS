@@ -9,7 +9,7 @@ package com.arun.util;
  */
 public class ConfigurationBean {
 	private String consumerId;
-	private String name;
+	private String country;
 	private String attributes;
 
 	public String getConsumerId() {
@@ -20,12 +20,13 @@ public class ConfigurationBean {
 		this.consumerId = consumerId;
 	}
 
-	public String getName() {
-		return name;
+
+	public String getCountry() {
+		return country;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setCountry(String country) {
+		this.country = country;
 	}
 
 	public String getAttributes() {
@@ -38,7 +39,7 @@ public class ConfigurationBean {
 
 	@Override
 	public String toString() {
-		return "ConfigurationBean [consumerId=" + consumerId + ", name=" + name + ", attributes=" + attributes + "]";
+		return "ConfigurationBean [consumerId=" + consumerId + ", name=" + country + ", attributes=" + attributes + "]";
 	}
 
 }
